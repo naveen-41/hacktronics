@@ -12,7 +12,7 @@ var mongoose=require("mongoose")
 var session = require('express-session');
 var cookieParser=require("cookie-parser")
 var app = express();
-http.createServer(app).listen(80)
+http.createServer(app).listen(8080)
 // config db
 mongoose.connect('mongodb://localhost:27017/tes').then((db,err)=>
 {
