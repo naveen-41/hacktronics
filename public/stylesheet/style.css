@@ -240,7 +240,6 @@ header .container .col-md-7 p {
 
 .section-3 {
   height: 70vmin;
-  margin-top: 15vmin;
   background: var(--bggradient);
 }
 
@@ -503,6 +502,18 @@ p {
   width: 25rem;
   height: 12rem;
 }
+.flex-rectangle{
+  height: 200px;
+  width: 100%;
+}
+.flex-rectangle:before{
+  display: block;
+  padding-top: 25%;
+}
+.location{
+  height: 200px;
+  width: 100%;
+}
 @media only screen and (max-width: 768px) {
   header .navbar-brand {
     padding-left: 1rem;
@@ -568,6 +579,13 @@ p {
   .collabimg {
     width: 100%;
     height: 8rem;
+  }
+  .flex-rectangle{
+    height: 150px;
+  }
+  .location{
+    height: 150px;
+    
   }
 }
 
