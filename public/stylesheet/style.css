@@ -526,6 +526,9 @@ p {
   .section-2 .cover {
     background-position: -25vmin -10vmin;
   }
+  .cover .content {
+    padding-top: 10vmin;
+  }
   .numbers .rect {
     width: 10rem;
     height: 8rem;
