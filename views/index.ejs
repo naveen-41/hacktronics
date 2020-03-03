@@ -16,7 +16,7 @@
 </head>
 
 <body>
-  <header id="1link">
+   <header id="1link">
     <div class="container-fluid p-0">
       <nav class="navbar navbar-expand-lg">
         <a class="navbar-brand" href="#">
@@ -110,7 +110,7 @@
                     <div class="form-group">
                       <label for="email1">Email address</label>
                       <input type="email" class="form-control" id="email1" aria-describedby="emailHelp" placeholder="Enter email">
-                      <small id="emailHelp" class="form-text text-muted"  ><%=email_error%></small>
+                      <small id="emailHelp" class="form-text text-muted"  >[]</small>
                     </div>
                     <div class="form-group">
                       <label for="password1">Password</label>
@@ -185,6 +185,11 @@
             Team Registration 
           </button></a></br></br>
           <h3>Last Date:15 March 2020</h3>
+          <span id="days"></span>
+          <span id="hours"></span>
+          <span id="mins"></span>
+          <span id="secs"></span>
+          <span id="end"></span>
       </div>
     </div>
   </header>
@@ -213,14 +218,15 @@
     <section class="section-2 container-fluid p-0" id="3link">
       <div class="cover">
         <div class="overlay"></div>
-        <div class="content text-center">
-          <h1>About Collaboration</h1>
+        <div class="content text-center p-5 ">
+          <h1 class="display-1">About Collaboration</h1>
           <p>
             Hacktronics 2020 will be organized by IIIT Una in collaboration with IEEE, IIT Mandi with the aim to reach out to as many innovators as possible and induce a great electronics and hardware spirit among the students.
           </p>
         </div>
       </div>
-      <div class="container-fluid text-center">
+
+      <div class="container-fluid text-center pt-4">
         <div class="numbers d-flex flex-md-row flex-wrap justify-content-center">
           <a href="http://www.iiitu.ac.in/" target="_balnk">
           <div class="rect">
@@ -241,7 +247,6 @@
         </div>
       </div>
 
-
       <div class="purchase text-center">
         <h1>Participants Section</h1>
         <p>“Wiseman participates, others are just observers”
@@ -253,8 +258,8 @@
                 <div class="title">
                   <h5 class="card-title">EVENT DETAILS</h5>
                 </div>
-                <p class="card-text">
-                  <li>The event will run for two days from 8:00 AM onwards on Day 1
+                  <ul class="card-text list">
+                  <li class="list-item">The event will run for two days from 8:00 AM onwards on Day 1
                   (April 11th) and Day 2 (April 12th).</li>
                   <li>Both day will include two sessions (pre-lunch and post-lunch), but the participants will be allowed to continue their work in
                   between the two sessions.</li>
@@ -279,7 +284,7 @@
                   each session on both days.</li>
                   <li>Participants who are unable to complete their projects within the
                   given duration will be judged based on whatever work is done.</li>
-                </p>
+                </ul>
 
               </div>
             </div>
@@ -289,6 +294,7 @@
                   <h5 class="card-title">REGISTRATION PROCESS</h5>
                 </div>
                 <p class="card-text">
+                  <ul class="card-text list">
                   <li>The registration needs to be done online at the Hacktronics
                   website.</li>
                   <li>All participants are expected to register and form teams on the
@@ -313,6 +319,7 @@
                   <li>The selected participants need to carry a Government/College ID, a passport size photograph and an acknowledgement letter
                   received from the Hacktronics Team of IIIT Una for physical
                   registration.</li>
+                  </ul>
                 </p>
             </div>
             </div>
@@ -322,6 +329,7 @@
                   <h5 class="card-title">CODE OF CONDUCT</h5>
                 </div>
                 <p class="card-text">
+                  <ul class="card-text list">
                   <li>Participants should go through the event rules and adhere to the
                   specifics.</li>
                   <li>Any queries regarding the event must be clarified by contacting us
@@ -341,6 +349,7 @@
                   be dismissed.</li>
                   <li>The organizers reserve the right to dismiss any project/team on
                   the grounds of misconduct.</li>
+                  </ul>
                 </p>
                 </div>
             </div>
@@ -363,7 +372,7 @@
       </div>
       <div class="platform row">
         <div style="margin: 0 auto;">
-         <a href="https://forms.gle/eK7no3y3JLY9EehP9"> <button class="btn btn-light px-5 py-2 primary-btn">
+         <a href="https://forms.gle/eK7no3y3JLY9EehP9"> <button class="btn btn-lg btn-light px-5 py-2 primary-btn">
             Register Now
           </button></a>
         </div>
@@ -475,7 +484,7 @@
   <footer id="6link">
     <div class="container-fluid p-0">
       <div class="row text-left">
-        <div class="col-md-5 col-sm-5">
+        <div class="col-md-5 col-sm-12">
           <h4 class="text-light">About us</h4>
           <p class="text-muted">We are from team Aavesh. Aavesh is an electronics society that strives to teach and help students acquire new skills in an era of rapidly evolving technology in the field of electronics and communication engineering. The Society aims to provide potential minds of IIITU a platform to discuss innovative ideas and nurture their skills to tackle real life challenges in the world today and contribute to the technical society through various projects, patents and research publications.</p>
           <p class="pt-4 text-muted">Copyright ©2019 All rights reserved | This Website is made by
