@@ -13,10 +13,11 @@
     crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="./stylesheet/style.css" />
+
 </head>
 
 <body>
-  <header id="1link">
+   <header id="1link">
     <div class="container-fluid p-0">
       <nav class="navbar navbar-expand-lg">
         <a class="navbar-brand" href="#">
@@ -110,7 +111,7 @@
                     <div class="form-group">
                       <label for="email1">Email address</label>
                       <input type="email" class="form-control" id="email1" aria-describedby="emailHelp" placeholder="Enter email">
-                      <small id="emailHelp" class="form-text text-muted"  ><%=email_error%></small>
+                      <small id="emailHelp" class="form-text text-muted"  >[]</small>
                     </div>
                     <div class="form-group">
                       <label for="password1">Password</label>
@@ -171,6 +172,8 @@
 
 <!--Modal: Login / Register Form-->
     
+ 
+
     <div class="container text-center">
       <div class="row">
         <div class="col-md-7 col-sm-12  text-white">
@@ -185,10 +188,22 @@
             Team Registration 
           </button></a></br></br>
           <h3>Last Date:15 March 2020</h3>
+          <span id="days"></span>
+          <span id="hours"></span>
+          <span id="mins"></span>
+          <span id="secs"></span>
+          <span id="end"></span>
       </div>
     </div>
   </header>
     <main>
+       <!-- recent updates section -->
+    <div class="container-fluid updates">
+      <h1 class="text-center">Important Updates!</h1>
+      <li>Registrations closing soon</li>
+    </div>
+  <!-- end recent updates section -->
+
     <section class="section-1" id="2link"> 
       <div class="container text-center">
         <div class="row">
@@ -213,14 +228,15 @@
     <section class="section-2 container-fluid p-0" id="3link">
       <div class="cover">
         <div class="overlay"></div>
-        <div class="content text-center">
-          <h1>About Collaboration</h1>
+        <div class="content text-center p-5 ">
+          <h1 class="display-1">About Collaboration</h1>
           <p>
             Hacktronics 2020 will be organized by IIIT Una in collaboration with IEEE, IIT Mandi with the aim to reach out to as many innovators as possible and induce a great electronics and hardware spirit among the students.
           </p>
         </div>
       </div>
-      <div class="container-fluid text-center">
+
+      <div class="container-fluid text-center pt-4">
         <div class="numbers d-flex flex-md-row flex-wrap justify-content-center">
           <a href="http://www.iiitu.ac.in/" target="_balnk">
           <div class="rect">
@@ -241,7 +257,6 @@
         </div>
       </div>
 
-
       <div class="purchase text-center">
         <h1>Participants Section</h1>
         <p>“Wiseman participates, others are just observers”
@@ -253,8 +268,8 @@
                 <div class="title">
                   <h5 class="card-title">EVENT DETAILS</h5>
                 </div>
-                <p class="card-text">
-                  <li>The event will run for two days from 8:00 AM onwards on Day 1
+                  <ul class="card-text list">
+                  <li class="list-item">The event will run for two days from 8:00 AM onwards on Day 1
                   (April 11th) and Day 2 (April 12th).</li>
                   <li>Both day will include two sessions (pre-lunch and post-lunch), but the participants will be allowed to continue their work in
                   between the two sessions.</li>
@@ -279,7 +294,7 @@
                   each session on both days.</li>
                   <li>Participants who are unable to complete their projects within the
                   given duration will be judged based on whatever work is done.</li>
-                </p>
+                </ul>
 
               </div>
             </div>
@@ -289,6 +304,7 @@
                   <h5 class="card-title">REGISTRATION PROCESS</h5>
                 </div>
                 <p class="card-text">
+                  <ul class="card-text list">
                   <li>The registration needs to be done online at the Hacktronics
                   website.</li>
                   <li>All participants are expected to register and form teams on the
@@ -313,6 +329,7 @@
                   <li>The selected participants need to carry a Government/College ID, a passport size photograph and an acknowledgement letter
                   received from the Hacktronics Team of IIIT Una for physical
                   registration.</li>
+                  </ul>
                 </p>
             </div>
             </div>
@@ -322,6 +339,7 @@
                   <h5 class="card-title">CODE OF CONDUCT</h5>
                 </div>
                 <p class="card-text">
+                  <ul class="card-text list">
                   <li>Participants should go through the event rules and adhere to the
                   specifics.</li>
                   <li>Any queries regarding the event must be clarified by contacting us
@@ -341,12 +359,129 @@
                   be dismissed.</li>
                   <li>The organizers reserve the right to dismiss any project/team on
                   the grounds of misconduct.</li>
+                  </ul>
                 </p>
                 </div>
             </div>
           </div>
         </div>
       </div>
+
+      <!-- Accordian menu -->
+      <div class="container accordion text-center" id="accordionExample">
+        <h1>Participants Section</h1>
+        <p>“Wiseman participates, others are just observers”</p>
+        <div class="card">
+            <div class="card-header" id="headingOne">
+                <h2 class="mb-0">
+                    <button type="button" class="btn btn-link acc-title" data-toggle="collapse" data-target="#collapseOne"><i class="fa fa-plus"></i> Event Details</button>									
+                </h2>
+            </div>
+            <div id="collapseOne" class="collapse acc-title" aria-labelledby="headingOne" data-parent="#accordionExample">
+                <div class="card-body">
+                  <ul class="card-text list">
+                    <li class="list-item">The event will run for two days from 8:00 AM onwards on Day 1
+                    (April 11th) and Day 2 (April 12th).</li>
+                    <li>Both day will include two sessions (pre-lunch and post-lunch), but the participants will be allowed to continue their work in
+                    between the two sessions.</li>
+                    <li>The participants must report on both days before 9:00 AM
+                    regardless of the status of their project.</li>
+                    <li>Participants are free to exhibit their idea in any field relating to
+                    robotic hardware whatsoever.</li>
+                    <li>Any project based solely on software programming and/or merely
+                    on the use of computer peripherals or other devices would not be
+                    selected for the physical round.</li>
+                    <li>There is no restriction on the scale of the project as long as the
+                    participants are able to present their prototype.</li>
+                    <li>The projects will be judged based on numerous criteria including
+                    but not limited to practical application, social impact, innovation
+                    and completion of the project.</li>
+                    <li>Basic components will be provided to aid the participants, but
+                    they need to carry their own hardware components/devices/
+                    peripherals/designing kits.</li>
+                    <li>The participants are required to prepare a presentation for their
+                    project, which will be presented by them at the end of Day 2.</li>
+                    <li>The idea and the status of the project will be judged at the end of
+                    each session on both days.</li>
+                    <li>Participants who are unable to complete their projects within the
+                    given duration will be judged based on whatever work is done.</li>
+                  </ul>
+  
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingTwo">
+                <h2 class="mb-0">
+                    <button type="button" class="btn btn-link collapsed acc-title" data-toggle="collapse" data-target="#collapseTwo"><i class="fa fa-plus"></i>Registration Process</button>
+                </h2>
+            </div>
+            <div id="collapseTwo" class="collapse " aria-labelledby="headingTwo" data-parent="#accordionExample">
+                <div class="card-body">
+                  <ul class="card-text list">
+                    <li>The registration needs to be done online at the Hacktronics
+                    website.</li>
+                    <li>All participants are expected to register and form teams on the
+                    registration portal.</li>
+                    <li>We encourage the participation of female students as we believe
+                    in a diverse team.</li>
+                    <li>They will be required to furnish basic personal and contact
+                    details.</li>
+                    <li>Participants will be required to upload an abstract of their project
+                    which should be in the format as displayed on the website.</li>
+                    <li>One team will be allowed to submit only one abstract.</li>
+                    <li>Registered teams will be shortlisted on the basis of their uploaded
+                    abstract.</li>
+                    <li>The shortlisted teams will be considered for the final round only
+                    after successful payment of ₹250 per participant has been made.</li>
+                    <li>If any shortlisted team is not selected for the final round, whole of
+                    the registration fee will be refunded within 15-30 working days.</li>
+                    <li>The finally selected teams need to be present at the decided venue
+                    for further round.</li>
+                    <li>The selected teams must be present at event location at 9:00 AM
+                    on Day 1 for physical registration.</li>
+                    <li>The selected participants need to carry a Government/College ID, a passport size photograph and an acknowledgement letter
+                    received from the Hacktronics Team of IIIT Una for physical
+                    registration.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingThree">
+                <h2 class="mb-0">
+                    <button type="button" class="btn btn-link collapsed acc-title" data-toggle="collapse" data-target="#collapseThree"><i class="fa fa-plus"></i> Code of Conduct</button>                     
+                </h2>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                <div class="card-body">
+                  <ul class="card-text list">
+                    <li>Participants should go through the event rules and adhere to the
+                    specifics.</li>
+                    <li>Any queries regarding the event must be clarified by contacting us
+                    at aavesh@iiitu.ac.in and no grievance will be entertained once
+                    the results are declared.</li>
+                    <li>The judgment rendered in any round will be final and not subject
+                    to consideration unless there is a technical mistake.</li>
+                    <li>The participants shall accept the judgment of the organizers at
+                    any stage of the event.</li>
+                    <li>The participants must arrange for their hardware and software
+                    components/devices/peripherals/designing kits. The organizers
+                    will not be responsible for the unavailability of any component
+                    required.</li>
+                    <li>The participants’ work in the physical round must not deviate
+                    entirely from the submitted abstract. Any team found working on
+                    any other idea than the one submitted in the abstract is liable to
+                    be dismissed.</li>
+                    <li>The organizers reserve the right to dismiss any project/team on
+                    the grounds of misconduct.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
       <div class="flex-rectangle"><img src="../assets/location.jpg" class="location"></div>
     </section>
     <section class="section-3 container-fluid p-0 text-center" id="4link">
@@ -363,7 +498,7 @@
       </div>
       <div class="platform row">
         <div style="margin: 0 auto;">
-         <a href="https://forms.gle/eK7no3y3JLY9EehP9"> <button class="btn btn-light px-5 py-2 primary-btn">
+         <a href="https://forms.gle/eK7no3y3JLY9EehP9"> <button class="btn btn-lg btn-light px-5 py-2 primary-btn">
             Register Now
           </button></a>
         </div>
@@ -475,7 +610,7 @@
   <footer id="6link">
     <div class="container-fluid p-0">
       <div class="row text-left">
-        <div class="col-md-5 col-sm-5">
+        <div class="col-md-5 col-sm-12">
           <h4 class="text-light">About us</h4>
           <p class="text-muted">We are from team Aavesh. Aavesh is an electronics society that strives to teach and help students acquire new skills in an era of rapidly evolving technology in the field of electronics and communication engineering. The Society aims to provide potential minds of IIITU a platform to discuss innovative ideas and nurture their skills to tackle real life challenges in the world today and contribute to the technical society through various projects, patents and research publications.</p>
           <p class="pt-4 text-muted">Copyright ©2019 All rights reserved | This Website is made by
@@ -517,7 +652,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
   <script src="/javascript/main.js"></script>
-          
+  
 </body>
 
 </html>

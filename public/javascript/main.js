@@ -35,7 +35,7 @@ $(window).scroll(function() {
   }
 });
 
-var countDownDate = new Date("Feb 15, 2020 00:00:00").getTime();
+var countDownDate = new Date("March 15, 2020 00:00:00").getTime();
 var myfunc = setInterval(function() {
   var now = new Date().getTime();
   var timeleft = countDownDate - now;
@@ -49,6 +49,7 @@ var myfunc = setInterval(function() {
   document.getElementById("hours").innerHTML = hours + "h ";
   document.getElementById("mins").innerHTML = minutes + "m ";
   document.getElementById("secs").innerHTML = seconds + "s ";
+  document.getElementById("end").innerHTML = "Remaining";
 
   if (timeleft < 0) {
     clearInterval(myfunc);
@@ -78,3 +79,20 @@ window.onclick = function(event) {
     mpopup.style.display = "none";
   }
 };
+
+
+// Accordion
+
+$(document).ready(function(){
+  // Add minus icon for collapse element which is open by default
+  $(".collapse.show").each(function(){
+    $(this).prev(".card-header").find(".fa").addClass("fa-minus").removeClass("fa-plus");
+  });
+  
+  // Toggle plus minus icon on show hide of collapse element
+  $(".collapse").on('show.bs.collapse', function(){
+    $(this).prev(".card-header").find(".fa").removeClass("fa-plus").addClass("fa-minus");
+  }).on('hide.bs.collapse', function(){
+    $(this).prev(".card-header").find(".fa").removeClass("fa-minus").addClass("fa-plus");
+  });
+});
