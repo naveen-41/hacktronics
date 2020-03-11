@@ -332,6 +332,7 @@ header .container .col-md-7 p {
   padding-left: 2rem;
 }
 
+#more {display: none;}
 .section-4 .carousel-item {
   padding-left: 3rem;
 }
