@@ -64,7 +64,7 @@ header {
 
 header .container .col-md-7 {
   font-family: "Rubik", sans-serif;
-  padding-left: 0rem;
+  padding-left: -10rem;
 }
 
 header .container .col-md-7 h6 {
@@ -113,7 +113,7 @@ header .container .col-md-7 p {
 
 .updates li {
   margin: 0 4rem 0 4rem;
-  text-align: center;
+  text-align: justify;
   font-size: 1.2rem;
   font-weight: 500;
   color: rgb(184, 181, 181);
@@ -563,6 +563,7 @@ p {
   header .navbar-brand {
     padding-left: 1rem;
   }
+
   .section-1 .row .col-md-6 .panel {
     position: initial;
     width: initial;
@@ -655,6 +656,11 @@ p {
   .section-3 .row h1 {
     padding: 6vmin 4vmin;
   }
+  .section-3 .col-md-12 li {
+    text-align: justify;
+    font-size: 1rem;
+    padding: 0.5rem 0;
+  }
   .section-3 .platform .col-md-6 {
     text-align: center !important;
   }
@@ -697,6 +703,42 @@ p {
     height: 150px;
     
   }
+  /********** updates section ********/
+.updates{
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  background: rgb(7, 7, 7);
+}
+
+.updates h1 {
+  color: white;
+  font-family: var(--Patua);
+  font-size: 1.5rem;
+  text-align: center;
+}
+.blinking{
+  animation:blinkingText 1.5s infinite;
+}
+@keyframes blinkingText{
+  0%{     color: rgb(250, 250, 250);    }
+  49%{    color: rgb(255, 255, 255); }
+  60%{    color: rgb(0, 0, 0); }
+  99%{    color: rgb(82, 82, 82);  }
+  100%{   color: rgb(255, 255, 255);    }
+}
+
+.updates li {
+  margin: 0 0;
+  text-align: justify;
+  font-size: 1rem;
+  font-weight: 500;
+  color: rgb(184, 181, 181);
+  list-style: none;
+}
+
+
+
+
 }
 
 /* screen size 375px */
